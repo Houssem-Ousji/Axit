@@ -1,0 +1,152 @@
+/* initiation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/* container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* nav bar */
+nav
+{
+    
+    padding: 10px 0;
+    background-color: black;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .container .nav_brand {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    cursor: default;
+}
+nav .container .nav_brand span
+{
+    color : #ff8b38;
+}
+nav .container .nav_list ul
+{
+    list-style: none;
+    display: flex;
+}
+nav .container .nav_list ul li
+{
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color .3s, padding .8s;
+}
+nav .container .nav_list ul li:hover
+{
+    
+    color: #ff8b38;
+}
+nav .container .nav_list ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+nav .container .menu_icon
+{
+    color: white;
+    font-size: 20px;
+    border: white solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav .container .nav_list
+    {
+        display: none;
+    }
+    nav .container .nav_list.active
+{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    padding: 10px 5px;
+}
+nav .container .nav_list.active ul{
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+}
+nav .container .nav_list.active  ul li:hover
+{
+    padding-left :30px; ;
+}
+}
+@media (min-width: 768px) {
+    nav .container .menu_icon
+{
+    display: none;
+}
+}
+/* in case we click on menu button */
+
+/* header*/ 
+header
+{
+    background: url("../images/header_bg.png");
+    background-size: cover;
+}
+header .container .content h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    cursor: default;
+}
+header .container .content h1 span
+{
+    color : #ff8b38;
+}
+
+
+
+
+
+

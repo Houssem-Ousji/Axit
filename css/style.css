@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 /* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@300&display=swap');
 /* container */
 .container {
     padding-left: 15px;
@@ -134,6 +136,23 @@ header
     background: url("../images/header_bg.png");
     background-size: cover;
 }
+header .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    height: 100%;
+}
+header .container .content_sup
+{
+    display: flex;
+    align-items: center;
+}
+header .container .content{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
 header .container .content h1 {
     color: white;
     text-transform: uppercase;
@@ -144,6 +163,97 @@ header .container .content h1 span
 {
     color : #ff8b38;
 }
+header .container .content h2
+{
+color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+header .container .content hr
+{
+    width: 50px;
+}
+header .container .content p
+{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+header .container .content button{
+    background-color: transparent;
+    border: solid white 2px;
+    padding: 5px 15px;
+    color: white;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 100px;
+}
+header .container .form
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 250px;
+    justify-content: space-between;
+} 
+header .container .form_sup
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .form .form_title{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 7px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+header .container .form .form_title span
+{
+    color: #ff8b38;
+}
+header .container .form .form_inputs{
+    padding: 10px;
+    text-align: center;
+
+}
+header .container .form input
+{
+    margin: 10px 0;
+    padding: 5px 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: solid rgb(151, 151, 151) 1px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 18px;
+}
+header .container .form input::placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 18px;
+}
+header .container .form .form_footer{
+    background-color: #ff8b38;
+    color: white;
+    padding: 7px 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
 
 

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200) {
+    .container {
+        width: 1170px;
+    }
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
